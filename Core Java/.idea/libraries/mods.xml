@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mods">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ch15/mods/jakarta.json-api-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ch15/mods/jakarta.json-2.0.1-module.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ch15/mods/yasson-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ch15/mods/jakarta.json.bind-api-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

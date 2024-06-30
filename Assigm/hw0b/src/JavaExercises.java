@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class JavaExercises {
@@ -15,14 +16,25 @@ public class JavaExercises {
      *  In any other case, return an empty String[] of size 3. */
     public static String[] takeOrder(String customer) {
         // TODO: Fill in this function.
-        return null;
+        var array1 = new String[]{"beyti", "pizza", "hamburger", "tea"};
+        var array2 = new String[]{"sushi", "pasta", "avocado", "coffee"};
+        var array3 = new String[3];
+        return switch (customer) {
+            case "Ergun" -> array1;
+            case "Erik" -> array2;
+            default -> array3;
+        };
     }
 
     /** Returns the positive difference between the maximum element and minimum element of the given array.
      *  Assumes array is nonempty. */
     public static int findMinMax(int[] array) {
         // TODO: Fill in this function.
-        return 0;
+        int max, min;
+        max = Arrays.stream(array).max().getAsInt();
+        min = Arrays.stream(array).min().getAsInt();
+
+        return max - min;
     }
 
     /**
@@ -38,8 +50,16 @@ public class JavaExercises {
     }
 
     private static List<Integer> hailstoneHelper(int x, List<Integer> list) {
-        // TODO: Fill in this function.
-        return null;
+        list.add(x);
+        if (x == 1) {
+            return list;
+        }
+        if (x %2 == 0) {
+            return hailstoneHelper(x/2, list);
+        } else {
+          return hailstoneHelper(x * 3 + 1, list);
+
+        }
     }
 
 }

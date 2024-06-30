@@ -42,7 +42,7 @@ public class Tile {
 
     /** Return my next state.  Before I am moved or merged, I am my
      *  own successor. */
-    Tile next() {
+    public Tile next() {
         return _next == null ? this : _next;
     }
 
